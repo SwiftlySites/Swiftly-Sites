@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Створення сайтів дешево і швидко | Сайт за 2–3 години від 200 грн</title>
+<meta name="description" content="Створюю красиві сайти за 2–3 години. Простий сайт від 200 грн, цікавий 300–500 грн, складний від 800 грн. Швидко, недорого, якісно.">
+<meta name="keywords" content="купити сайт дешево, створення сайтів, замовити сайт, сайт за 200 грн, сайт візитка, лендінг, розробка сайтів Україна, веб-дизайн, сайт під ключ, швидке створення сайту">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--cobalt:#2432e8;--ink:#0b1033;--mist:#eef1fb;--sun:#ffcb47;--white:#fff;--line:rgba(11,16,51,.14);--r:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',system-ui,sans-serif;background:var(--mist);color:var(--ink);line-height:1.65;font-size:17px;overflow-x:hidden}
+h1,h2,h3{font-family:'Unbounded',sans-serif;line-height:1.1;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{padding:110px 0}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 32px;mix-blend-mode:normal}
+.logo{font-family:'Unbounded';font-weight:900;font-size:18px;color:var(--white);text-decoration:none}
+.nav-cta{background:var(--sun);color:var(--ink);padding:11px 22px;border-radius:99px;font-weight:700;text-decoration:none;font-size:15px;transition:transform .25s}
+.nav-cta:hover{transform:rotate(-3deg) scale(1.05)}
+
+/* HERO */
+.hero{background:var(--cobalt);color:var(--white);padding:150px 0 0;position:relative;overflow:hidden;border-radius:0 0 60px 60px}
+.hero::before{content:"";position:absolute;width:640px;height:640px;border-radius:50%;border:90px solid rgba(255,255,255,.07);right:-180px;top:-200px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;position:relative}
+.hero h1{font-size:clamp(38px,6vw,76px);font-weight:900;margin-bottom:26px}
+.hero h1 span{display:block;opacity:0;transform:translateY(40px);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 span:nth-child(2){animation-delay:.15s;color:var(--sun)}
+.hero h1 span:nth-child(3){animation-delay:.3s}
+.hero p.lead{font-size:20px;max-width:520px;opacity:0;animation:up .9s .5s forwards}
+.btns{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap;opacity:0;animation:up .9s .7s forwards}
+.btn{padding:16px 30px;border-radius:99px;font-weight:700;text-decoration:none;transition:transform .25s,box-shadow .25s;display:inline-block}
+.btn.main{background:var(--sun);color:var(--ink)}
+.btn.main:hover{transform:translateY(-3px);box-shadow:0 12px 0 rgba(0,0,0,.18)}
+.btn.ghost{border:2px solid rgba(255,255,255,.5);color:var(--white)}
+.btn.ghost:hover{background:var(--white);color:var(--cobalt)}
+@keyframes up{to{opacity:1;transform:none}}
+
+/* browser mock */
+.mock{background:var(--white);border-radius:var(--r);box-shadow:0 40px 0 -10px rgba(0,0,0,.18);transform:rotate(3deg);animation:float 6s ease-in-out infinite;color:var(--ink);overflow:hidden}
+@keyframes float{50%{transform:rotate(1deg) translateY(-14px)}}
+.bar{display:flex;gap:7px;padding:14px 16px;background:#e3e7f8;align-items:center}
+.bar i{width:11px;height:11px;border-radius:50%;background:var(--cobalt);opacity:.35}
+.bar b{margin-left:10px;background:var(--white);border-radius:99px;font-size:12px;padding:3px 14px;font-weight:500;flex:1}
+.screen{padding:20px;display:grid;gap:12px;grid-template-columns:repeat(3,1fr)}
+.screen div{border-radius:12px;background:var(--mist);transform:scale(0);animation:pop 8s infinite}
+.screen .a{grid-column:span 3;height:90px;background:var(--cobalt);animation-delay:0s}
+.screen .b{height:70px;animation-delay:.5s}.screen .c{height:70px;animation-delay:.9s;background:var(--sun)}.screen .d{height:70px;animation-delay:1.3s}
+.screen .e{grid-column:span 2;height:44px;animation-delay:1.8s}.screen .f{height:44px;animation-delay:2.1s;background:var(--ink)}
+@keyframes pop{0%{transform:scale(0)}6%,88%{transform:scale(1)}96%,100%{transform:scale(0)}}
+
+/* ticker */
+.ticker{margin-top:80px;border-top:1px solid rgba(255,255,255,.25);overflow:hidden;white-space:nowrap;padding:20px 0}
+.ticker div{display:inline-block;animation:run 34s linear infinite;font-family:'Unbounded';font-weight:700;font-size:20px}
+.ticker span{margin:0 28px}.ticker span::after{content:"";display:inline-block;width:10px;height:10px;background:var(--sun);margin-left:56px;transform:rotate(45deg)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* what */
+.what{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+h2{font-size:clamp(30px,4.4vw,52px);font-weight:900;margin-bottom:24px}
+.what p{margin-bottom:16px;max-width:520px}
+.quote{font-family:'Unbounded';font-size:clamp(26px,3.6vw,44px);font-weight:700;line-height:1.2;border-left:8px solid var(--sun);padding-left:28px}
+.quote small{display:block;margin-top:18px;font-family:'Manrope';font-weight:500;font-size:16px;opacity:.7}
+
+/* why */
+.why{background:var(--ink);color:var(--white);border-radius:60px}
+.why h2{max-width:700px}
+.factors{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-top:50px}
+.f{grid-column:span 2;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:34px 28px;transition:background .3s,transform .3s}
+.f:nth-child(4),.f:nth-child(5){grid-column:span 3}
+.f:hover{background:var(--cobalt);transform:translateY(-6px)}
+.f h3{font-size:22px;margin-bottom:12px;color:var(--sun)}
+.f p{opacity:.85;font-size:16px}
+
+/* main advantage */
+.main-adv{text-align:center}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px;text-align:left}
+.t{background:var(--white);border-radius:var(--r);padding:40px 32px;border:2px solid var(--ink);box-shadow:8px 8px 0 var(--ink);transition:transform .25s,box-shadow .25s}
+.t:hover{transform:translate(4px,4px);box-shadow:3px 3px 0 var(--ink)}
+.t:nth-child(2){background:var(--sun)}
+.t .big{font-family:'Unbounded';font-weight:900;font-size:46px;display:block;margin-bottom:10px;color:var(--cobalt)}
+.t:nth-child(2) .big{color:var(--ink)}
+.clock{width:150px;height:150px;margin:40px auto 0;position:relative}
+.clock svg{width:100%;height:100%}
+.hand{transform-origin:50% 50%;animation:spin 6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* price */
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px;align-items:stretch}
+.p{background:var(--white);border-radius:var(--r);padding:40px 32px;display:flex;flex-direction:column;position:relative;transition:transform .3s}
+.p:hover{transform:translateY(-10px)}
+.p.hot{background:var(--cobalt);color:var(--white)}
+.p.hot::before{content:attr(data-badge);position:absolute;top:-14px;left:32px;background:var(--sun);color:var(--ink);font-weight:700;font-size:13px;padding:4px 14px;border-radius:99px}
+.p h3{font-size:22px;margin-bottom:6px}
+.sum{font-family:'Unbounded';font-weight:900;font-size:38px;margin:18px 0}
+.sum small{font-size:16px;font-weight:500}
+.p ul{list-style:none;margin-bottom:30px;flex:1}
+.p li{padding:9px 0;border-bottom:1px solid var(--line);font-size:16px}
+.p.hot li{border-color:rgba(255,255,255,.25)}
+.p .btn{text-align:center;background:var(--ink);color:var(--white)}
+.p.hot .btn{background:var(--sun);color:var(--ink)}
+
+/* extra */
+.extra{background:var(--sun);border-radius:60px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:50px;counter-reset:s}
+.s{counter-increment:s;border-top:4px solid var(--ink);padding-top:18px}
+.s::before{content:counter(s);font-family:'Unbounded';font-weight:900;font-size:40px;display:block}
+.s h3{font-size:18px;margin:8px 0}
+.gar{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gar div{background:var(--ink);color:var(--white);border-radius:var(--r);padding:28px}
+.gar b{font-family:'Unbounded';display:block;margin-bottom:8px;color:var(--sun)}
+
+/* tags */
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.tags a{padding:8px 16px;border-radius:99px;border:1.5px solid var(--line);background:var(--white);text-decoration:none;font-size:15px;font-weight:500;transition:background .2s,color .2s,transform .2s}
+.tags a:hover{background:var(--cobalt);color:var(--white);transform:rotate(-2deg)}
+
+/* contact */
+.contact{background:var(--cobalt);color:var(--white);text-align:center;border-radius:60px 60px 0 0;padding:120px 0}
+.contact h2{font-size:clamp(34px,6vw,80px);margin-bottom:20px}
+.contact p{max-width:560px;margin:0 auto 36px;font-size:19px}
+.links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+footer{background:var(--cobalt);color:rgba(255,255,255,.7);text-align:center;padding:0 0 30px;font-size:14px}
+
+@media(max-width:900px){
+ section{padding:80px 0}
+ .hero-grid,.what{grid-template-columns:1fr}
+ .trio,.prices,.gar{grid-template-columns:1fr}
+ .steps{grid-template-columns:1fr 1fr}
+ .factors{grid-template-columns:1fr}.f,.f:nth-child(4),.f:nth-child(5){grid-column:auto}
+ .mock{max-width:420px}
+ nav{padding:14px 18px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hero h1 span,.hero p.lead,.btns{opacity:1;transform:none}.screen div{transform:none}}
+
+/* v2 */
+nav{justify-content:flex-end;gap:12px}
+.lang{background:var(--ink);color:#fff;border:2px solid var(--sun);border-radius:99px;padding:9px 18px;font:700 15px 'Manrope',sans-serif;cursor:pointer;transition:background .25s,color .25s,transform .25s}
+.lang:hover{background:var(--sun);color:var(--ink);transform:rotate(4deg)}
+.progress{position:fixed;top:0;left:0;height:4px;width:100%;background:var(--sun);transform-origin:0 50%;transform:scaleX(0);z-index:70}
+.cursor{position:fixed;left:0;top:0;width:40px;height:40px;border:2px solid var(--sun);border-radius:50%;pointer-events:none;z-index:99;opacity:0;mix-blend-mode:difference;transition:transform .12s ease-out,opacity .3s}
+.hero{background:linear-gradient(120deg,#2432e8,#4a2fe6 50%,#2432e8);background-size:220% 220%;animation:bg 14s ease infinite}
+@keyframes bg{50%{background-position:100% 50%}}
+.orb{position:absolute;border-radius:50%;pointer-events:none;z-index:0}
+.o1{width:90px;height:90px;background:var(--sun);left:47%;top:120px;animation:drift 7s ease-in-out infinite}
+.o2{width:46px;height:46px;border:6px solid #fff;opacity:.5;left:5%;bottom:170px;animation:drift 5s -2s ease-in-out infinite reverse}
+.o3{width:42px;height:42px;background:rgba(255,255,255,.2);border-radius:9px;right:7%;bottom:150px;animation:spinS 12s linear infinite}
+@keyframes drift{50%{transform:translate(26px,-36px) scale(1.12)}}
+@keyframes spinS{to{transform:rotate(360deg)}}
+.rv:not(.in){opacity:0}
+.rv.in{animation:rise .85s cubic-bezier(.2,.8,.2,1) backwards}
+@keyframes rise{from{opacity:0;transform:translateY(46px) scale(.97)}}
+h2::after{content:"";display:block;width:90px;height:8px;background:var(--sun);margin-top:16px;border-radius:9px;transform-origin:0 50%}
+h2.in::after{animation:draw 1s .3s backwards}
+@keyframes draw{from{transform:scaleX(0)}}
+.main-adv h2::after,.contact h2::after{margin:16px auto 0}
+.extra h2::after{background:var(--ink)}
+.btn,.nav-cta{transition:transform .2s,box-shadow .25s,background .25s}
+.t .big{display:inline-block;animation:bob 3.2s ease-in-out infinite}
+.t:nth-child(2) .big{animation-delay:-1s}.t:nth-child(3) .big{animation-delay:-2s}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.f::after{content:"";display:block;width:0;height:4px;background:var(--sun);margin-top:18px;border-radius:4px;transition:width .5s}
+.f:hover::after{width:100%}
+.contact .btn.main{animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,203,71,.7)}70%,100%{box-shadow:0 0 0 22px rgba(255,203,71,0)}}
+@media(max-width:900px){.cursor{display:none}.o1{display:none}}
+@media(prefers-reduced-motion:reduce){.rv:not(.in){opacity:1}.hero{animation:none}}
+</style>
+</head>
+<body>
+
+<div class="progress"></div><div class="cursor"></div>
+<nav>
+ <button class="lang" id="lang" aria-label="Мова / Language">EN</button>
+ <a class="nav-cta" href="#kontakt">Замовити сайт</a>
+</nav>
+
+<header class="hero" id="top">
+ <i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i>
+ <div class="wrap hero-grid">
+  <div>
+   <h1><span>Я роблю</span><span>красиві сайти</span><span>за години, а не тижні</span></h1>
+   <p class="lead">Беру ідею вашого бізнесу й перетворюю її на сучасний сайт, який виглядає дорого, працює швидко і приводить клієнтів. Від 200 грн.</p>
+   <div class="btns">
+    <a class="btn main" href="#cina">Дізнатися ціну</a>
+    <a class="btn ghost" href="#kontakt">Написати мені</a>
+   </div>
+  </div>
+  <div class="mock" aria-hidden="true">
+   <div class="bar"><i></i><i></i><i></i><b>vash-biznes.com.ua</b></div>
+   <div class="screen"><div class="a"></div><div class="b"></div><div class="c"></div><div class="d"></div><div class="e"></div><div class="f"></div></div>
+  </div>
+ </div>
+ <div class="ticker" aria-hidden="true"><div>
+  <span>Сайт за 2–3 години</span><span>Від 200 грн</span><span>Сучасний дизайн</span><span>Адаптивність під телефон</span><span>Сайт під ключ</span>
+  <span>Сайт за 2–3 години</span><span>Від 200 грн</span><span>Сучасний дизайн</span><span>Адаптивність під телефон</span><span>Сайт під ключ</span>
+ </div></div>
+</header>
+
+<section id="shcho">
+ <div class="wrap what">
+  <div>
+   <h2>Що я роблю</h2>
+   <p>Я створюю сайти, які не соромно показати клієнтам. Кожен проєкт починається з чистого аркуша: ваш кольоровий стиль, ваші тексти, ваша аудиторія.</p>
+   <p>Візитки, лендінги, сторінки для послуг, портфоліо, інтернет-вітрини. Чистий код, плавна анімація, швидке завантаження та коректне відображення на будь-якому екрані.</p>
+   <p>Сайт для мене не картинка, а інструмент, який має продавати, пояснювати й викликати довіру.</p>
+  </div>
+  <div class="quote">«Я роблю красиві сайти.»<small>Виразна типографіка, продумана композиція, живі деталі та зручна навігація.</small></div>
+ </div>
+</section>
+
+<section class="why" id="chomu">
+ <div class="wrap">
+  <h2>Чому обирають мене</h2>
+  <p style="max-width:560px;opacity:.8">П’ять причин, через які клієнти повертаються з новими замовленнями.</p>
+  <div class="factors">
+   <div class="f"><h3>Швидкість</h3><p>Роблю сайт спокійно за 2–3 години залежно від складності роботи. Ви не чекаєте тижнями.</p></div>
+   <div class="f"><h3>Доступна ціна</h3><p>Прозорі розцінки без прихованих платежів. Знаєте суму ще до початку роботи.</p></div>
+   <div class="f"><h3>Якість дизайну</h3><p>Унікальний вигляд без шаблонів: типографіка, кольори й анімації підібрані під ваш бренд.</p></div>
+   <div class="f"><h3>Адаптивність</h3><p>Сайт однаково гарно виглядає на телефоні, планшеті та комп’ютері, а це половина успіху в наш час.</p></div>
+   <div class="f"><h3>Підтримка після запуску</h3><p>Внесу правки, допоможу з текстами та відповім на питання, навіть коли сайт уже працює.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="main-adv" id="perevaga">
+ <div class="wrap">
+  <h2>Головна перевага</h2>
+  <p style="max-width:620px;margin:0 auto">Три речі, які зазвичай не поєднуються, у мене працюють разом.</p>
+  <div class="trio">
+   <div class="t"><span class="big">2–3 год</span><h3>Швидкість</h3><p style="margin-top:10px">Від запиту до готового сайту за один вечір.</p></div>
+   <div class="t"><span class="big">200 грн</span><h3>Ціна</h3><p style="margin-top:10px">Найнижчі ціни на ринку без втрати вигляду.</p></div>
+   <div class="t"><span class="big">100%</span><h3>Якість</h3><p style="margin-top:10px">Чистий код, сучасний стиль, перевірка на всіх екранах.</p></div>
+  </div>
+  <div class="clock" aria-hidden="true">
+   <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="#fff" stroke="#0b1033" stroke-width="4"/><circle cx="50" cy="50" r="4" fill="#2432e8"/><line class="hand" x1="50" y1="50" x2="50" y2="14" stroke="#2432e8" stroke-width="4" stroke-linecap="round"/><line x1="50" y1="50" x2="72" y2="50" stroke="#0b1033" stroke-width="4" stroke-linecap="round"/></svg>
+  </div>
+ </div>
+</section>
+
+<section id="cina" style="padding-top:20px">
+ <div class="wrap">
+  <h2>Ціни</h2>
+  <p>Остаточна вартість залежить від складності. Точну суму назву одразу після короткого обговорення.</p>
+  <div class="prices">
+   <div class="p">
+    <h3>Простий сайт</h3><p>Для старту й візитки</p>
+    <div class="sum">200 <small>грн</small></div>
+    <ul><li>Одна сторінка</li><li>Сучасний дизайн</li><li>Адаптивна верстка</li><li>Готово за 2 години</li></ul>
+    <a class="btn" href="#kontakt">Замовити</a>
+   </div>
+   <div class="p hot" data-badge="Найпопулярніший">
+    <h3>Цікавий сайт</h3><p>Для тих, хто хоче виділитися</p>
+    <div class="sum">300–500 <small>грн</small></div>
+    <ul><li>До 5 секцій або сторінок</li><li>Анімації та ефекти</li><li>Форма зв’язку</li><li>SEO-налаштування</li></ul>
+    <a class="btn" href="#kontakt">Замовити</a>
+   </div>
+   <div class="p">
+    <h3>Складний сайт</h3><p>Для масштабних проєктів</p>
+    <div class="sum">від 800 <small>грн</small></div>
+    <ul><li>Багато сторінок</li><li>Інтерактив і логіка</li><li>Каталог, калькулятор, кабінет</li><li>Індивідуальна розробка</li></ul>
+    <a class="btn" href="#kontakt">Обговорити</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="extra" id="dodatkovo">
+ <div class="wrap">
+  <h2>Як ми працюємо</h2>
+  <p style="max-width:560px">Простий шлях від ідеї до сайту, на якому немає зайвих кроків.</p>
+  <div class="steps">
+   <div class="s"><h3>Розмова</h3><p>Ви розповідаєте про бізнес і побажання.</p></div>
+   <div class="s"><h3>Дизайн</h3><p>Підбираю стиль, кольори й шрифти.</p></div>
+   <div class="s"><h3>Розробка</h3><p>Роблю сайт і перевіряю на всіх пристроях.</p></div>
+   <div class="s"><h3>Запуск</h3><p>Передаю файли та допомагаю опублікувати.</p></div>
+  </div>
+  <div class="gar">
+   <div><b>Безкоштовні правки</b>Після здачі внесу дрібні виправлення без доплати.</div>
+   <div><b>Оплата після перегляду</b>Спочатку ви бачите результат, потім оплачуєте.</div>
+   <div><b>Ваш код, ваші права</b>Усі файли переходять вам без прив’язки до мене.</div>
+  </div>
+ </div>
+</section>
+
+<section id="khesh">
+ <div class="wrap">
+  <h2>Мене шукають за запитами</h2>
+  <p>Ці теми та хештеги допомагають клієнтам знаходити мене в Google.</p>
+  <div class="tags" id="tags"></div>
+ </div>
+</section>
+
+<section class="contact" id="kontakt">
+ <div class="wrap">
+  <h2>Давайте зробимо ваш сайт</h2>
+  <p>Напишіть коротко, що потрібно, і я відповім з ціною та термінами. Перший сайт уже сьогодні ввечері.</p>
+  <div class="links">
+   <a class="btn main" href="https://t.me/weretymaker">Telegram</a>
+   <a class="btn ghost" href="mailto:oleksijbojko28@gmail.com">oleksijbojko28@gmail.com</a>
+   <a class="btn ghost" href="tel:+380987800168">+380 98 780 01 68</a>
+  </div>
+ </div>
+</section>
+<footer>© 2026 Створення сайтів дешево, швидко й красиво.</footer>
+
+<script>
+const raw="купитисайтдешево,сайтзадвігодини,створеннясайтів,замовитисайт,сайтвізитка,лендінг,сайтпідключ,розробкасайтів,веб-дизайн,веб-розробник,сайтдлябізнесу,дешевийсайт,сайтза200грн,швидкествореннясайту,красивийсайт,сучаснийсайт,адаптивнийсайт,сайтнателефон,мобільнаверстка,верстка,front-end,html,css,javascript,анімаціїнасайті,унікальнийдизайн,дизайнсайту,сайтпортфоліо,сайтдляфотографа,сайтдляпослуг,сайтдлякафе,сайтдлямагазину,інтернетмагазин,інтернетвітрина,сторінкапродажу,одностореннийсайт,багатосторінковийсайт,сайтдляфрілансера,сайтдлялікаря,сайтдляюриста,сайтдлябарбершопу,сайтдлясалонукраси,сайтдлястудії,сайтдлятренера,сайтдляблогера,сайтдлякурсів,сайтдляподій,сайтзаопис,сайтзаказ,замовлення,цінинасайти,скількикоштуєсайт,вартістьсайту,сайтнедорого,бюджетнийсайт,сайтдлястартапу,сайтдляпідприємця,сайтдляФОП,малийбізнес,онлайнприсутність,просуванняботіз,seo,seoоптимізація,швидкийсайт,сайтзаодинвечір,терміновосайт,сайтсьогодні,майстерсайтів,веб-студія,фрілансервебдизайн,україна,київ,львів,харків,одеса,дніпро,рівне,вінниця,запоріжжя,чернівці,івано-франківськ,тернопіль,луцьк,житомир,полтава,черкаси,суми,чернігів,ужгород,миколаїв,херсон,сайтукраїна,сайтзаграницю,сайтукраїнською,сайтанглійською,багатомовнийсайт,домен,хостинг,публікаціясайту,підтримкасайту,правкинасайті,редизайн,оновленнясайту,переробкасайту,сайтзашаблоном,сайтбезшаблону,сайткалькулятор,сайтзформою,сайтізформоюзвязку,телеграмбот,сайтдляреклами,посадковасторінка,landingpage,website,webdesign,webdeveloper,cheapwebsite,buywebsite";
+const tags=raw.split(",").map(t=>t.trim()).filter(Boolean);
+const box=document.getElementById("tags");
+tags.forEach(t=>{const a=document.createElement("a");a.href="#kontakt";a.textContent="#"+t;box.appendChild(a)});
+</script>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('h2,.f,.t,.p,.s,.gar div,.what>div').forEach((el,i)=>{el.classList.add('rv');el.style.animationDelay=(i%3)*110+'ms';io.observe(el)});
+const bar=document.querySelector('.progress'),cur=document.querySelector('.cursor');
+addEventListener('scroll',()=>{bar.style.transform='scaleX('+scrollY/(document.body.scrollHeight-innerHeight)+')'},{passive:true});
+if(matchMedia('(pointer:fine)').matches)addEventListener('mousemove',e=>{cur.style.opacity=1;cur.style.transform='translate('+(e.clientX-20)+'px,'+(e.clientY-20)+'px)'});
+document.querySelectorAll('.p,.f').forEach(c=>{c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(700px) rotateY('+x*10+'deg) rotateX('+-y*10+'deg) translateY(-8px)'});c.addEventListener('mouseleave',()=>c.style.transform='')});
+document.querySelectorAll('.btn.main,.nav-cta').forEach(b=>{b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();b.style.transform='translate('+(e.clientX-r.left-r.width/2)*.25+'px,'+(e.clientY-r.top-r.height/2)*.35+'px)'});b.addEventListener('mouseleave',()=>b.style.transform='')});
+</script>
+<script>
+const EN={0:"Order a website",1:"I build",2:"beautiful websites",3:"in hours, not weeks",4:"I take your business idea and turn it into a modern website that looks premium, loads fast and brings in clients. From 200 UAH.",5:"See the price",6:"Message me",8:"Website in 2–3 hours",9:"From 200 UAH",10:"Modern design",11:"Mobile-friendly",12:"Turnkey website",13:"Website in 2–3 hours",14:"From 200 UAH",15:"Modern design",16:"Mobile-friendly",17:"Turnkey website",18:"What I do",19:"I create websites you won't be embarrassed to show your clients. Every project starts from a blank page: your colors, your texts, your audience.",20:"Business cards, landing pages, service pages, portfolios, online showcases. Clean code, smooth animation, fast loading and correct display on any screen.",21:"For me a website is not a picture but a tool that has to sell, explain and build trust.",22:"“I build beautiful websites.”",23:"Expressive typography, thoughtful composition, lively details and easy navigation.",24:"Why choose me",25:"Five reasons why clients come back with new orders.",26:"Speed",27:"I calmly build a website in 2–3 hours, depending on the complexity. You don't wait for weeks.",28:"Affordable price",29:"Transparent pricing with no hidden fees. You know the amount before the work starts.",30:"Design quality",31:"A unique look without templates: typography, colors and animations tailored to your brand.",32:"Responsiveness",33:"The site looks equally good on phone, tablet and computer, and that is half of today's success.",34:"Support after launch",35:"I'll make edits, help with texts and answer questions even when the site is already live.",36:"Main advantage",37:"Three things that usually don't go together work together with me.",38:"2–3 h",39:"Speed",40:"From request to a finished website in one evening.",41:"200 UAH",42:"Price",43:"The lowest prices on the market without losing quality of look.",45:"Quality",46:"Clean code, modern style, checked on all screens.",47:"Prices",48:"The final cost depends on complexity. I'll name the exact amount right after a short discussion.",49:"Simple website",50:"For a start and a business card",52:"UAH",53:"One page",54:"Modern design",55:"Responsive layout",56:"Ready in 2 hours",57:"Order",58:"Interesting website",59:"For those who want to stand out",61:"UAH",62:"Up to 5 sections or pages",63:"Animations and effects",64:"Contact form",65:"SEO setup",66:"Order",67:"Complex website",68:"For large-scale projects",69:"from 800",70:"UAH",71:"Many pages",72:"Interactivity and logic",73:"Catalog, calculator, user account",74:"Custom development",75:"Discuss",76:"How we work",77:"A simple path from idea to website with no extra steps.",78:"Conversation",79:"You tell me about your business and wishes.",80:"Design",81:"I choose the style, colors and fonts.",82:"Development",83:"I build the site and test it on all devices.",84:"Launch",85:"I hand over the files and help you publish.",86:"Free edits",87:"After delivery I'll make small fixes at no extra cost.",88:"Pay after review",89:"First you see the result, then you pay.",90:"Your code, your rights",91:"All files go to you with no strings attached to me.",92:"Searches that lead to me",93:"These topics and hashtags help clients find me on Google.",94:"Let's build your website",95:"Write briefly what you need and I'll reply with a price and deadlines. Your first site could be ready tonight.",99:"© 2026 Websites made cheap, fast and beautiful."};
+const TAGS_EN="buywebsitecheap,cheapwebsite,websitein2hours,websitedevelopment,orderwebsite,businesscardwebsite,landingpage,turnkeywebsite,webdesign,webdeveloper,frontend,html,css,javascript,beautifulwebsite,modernwebsite,responsivewebsite,mobilewebsite,uniquedesign,portfoliowebsite,websiteforbusiness,onlinestore,onepagewebsite,freelancer,websiteprice,howmuchisawebsite,affordablewebsite,fastwebsite,urgentwebsite,websitetoday,webstudio,smallbusiness,startupwebsite,websiteforbarbershop,websiteforphotographer,websiteforcafe,websiteforcoach,websiteforcourses,seo,websiteredesign,websitesupport,ukraine,kyiv,lviv,rivne,websiteukraine,websitewithanimation,websitewithcontactform,websitecalculator,webdev,uidesign";
+const T={uk:[document.title,document.querySelector('meta[name=description]').content],en:["Cheap and Fast Website Development | Website in 2–3 hours from 200 UAH","I build beautiful websites in 2–3 hours. Simple site from 200 UAH, interesting 300–500 UAH, complex from 800 UAH. Fast, affordable, high quality."]};
+const nodes=[],tw=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>(n.parentElement.closest('script,style,#tags,#lang')||!n.nodeValue.trim())?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+while(tw.nextNode())nodes.push(tw.currentNode);
+const UK=nodes.map(n=>n.nodeValue),box2=document.getElementById('tags'),UKT=raw.split(',').map(t=>t.trim()).filter(Boolean);
+function mk(list){box2.innerHTML='';list.forEach((t,i)=>{const a=document.createElement('a');a.href='#kontakt';a.textContent='#'+t;a.className='rv';a.style.animationDelay=Math.min(i,40)*20+'ms';box2.appendChild(a);io.observe(a)})}
+function setLang(en){
+ nodes.forEach((n,i)=>{n.nodeValue=(en&&EN[i]!==undefined)?UK[i].replace(UK[i].trim(),EN[i]):UK[i]});
+ document.documentElement.lang=en?'en':'uk';
+ document.title=T[en?'en':'uk'][0];
+ document.querySelector('meta[name=description]').content=T[en?'en':'uk'][1];
+ document.querySelector('.p.hot').dataset.badge=en?'Most popular':'Найпопулярніший';
+ lang.textContent=en?'UA':'EN';
+ mk(en?TAGS_EN.split(','):UKT);
+ try{localStorage.setItem('lang',en?'en':'uk')}catch(e){}
+}
+let isEn=false;
+lang.addEventListener('click',()=>{isEn=!isEn;setLang(isEn)});
+mk(UKT);
+try{if(localStorage.getItem('lang')==='en'){isEn=true;setLang(true)}}catch(e){}
+</script>
+</body>
+</html>
